@@ -5,7 +5,7 @@
         "description": "VIA project exported to COCO format using VGG Image Annotator (http://www.robots.ox.ac.uk/~vgg/software/via/)",
         "contributor": "",
         "url": "http://www.robots.ox.ac.uk/~vgg/software/via/",
-        "date_created": "Thu Jun 11 2020 15:26:47 GMT+0800 (Singapore Standard Time)"
+        "date_created": "Fri Jun 12 2020 12:07:41 GMT+0800 (Singapore Standard Time)"
     },
     "images": [
         {
@@ -1067,17 +1067,17 @@
                     1287,
                     506,
                     1269,
-                    3124,
+                    3120,
                     531,
                     3105
                 ]
             ],
-            "area": 2440116,
+            "area": 2436748,
             "bbox": [
                 445,
                 226,
                 842,
-                2898
+                2894
             ],
             "iscrowd": 0,
             "id": 28,
