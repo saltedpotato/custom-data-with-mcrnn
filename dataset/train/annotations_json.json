@@ -1,1 +1,1850 @@
-{"info":{"year":2020,"version":"1.0","description":"VIA project exported to COCO format using VGG Image Annotator (http://www.robots.ox.ac.uk/~vgg/software/via/)","contributor":"","url":"http://www.robots.ox.ac.uk/~vgg/software/via/","date_created":"Thu Jun 11 2020 15:26:47 GMT+0800 (Singapore Standard Time)"},"images":[{"id":1,"width":2514,"height":2806,"file_name":"DOR_S1_1.jpg","license":0,"date_captured":""},{"id":2,"width":2874,"height":2960,"file_name":"DOR_S1_2.jpg","license":0,"date_captured":""},{"id":3,"width":2135,"height":2815,"file_name":"DOR_S1_3.jpg","license":0,"date_captured":""},{"id":4,"width":2274,"height":3061,"file_name":"DOR_S1_4.jpg","license":0,"date_captured":""},{"id":5,"width":2440,"height":3120,"file_name":"DOR_S1_5.jpg","license":0,"date_captured":""},{"id":6,"width":2385,"height":3120,"file_name":"DOR_S1_6.jpg","license":0,"date_captured":""},{"id":7,"width":2274,"height":4160,"file_name":"DOR_S1_7.jpg","license":0,"date_captured":""},{"id":8,"width":1978,"height":3120,"file_name":"DOR_S1_8.jpg","license":0,"date_captured":""},{"id":9,"width":2218,"height":3120,"file_name":"DOR_S1_9.jpg","license":0,"date_captured":""},{"id":10,"width":2225,"height":3323,"file_name":"DOR_S1_10.jpg","license":0,"date_captured":""},{"id":11,"width":1658,"height":2732,"file_name":"DOR_S1_11.jpg","license":0,"date_captured":""},{"id":12,"width":1425,"height":3840,"file_name":"DOR_S1_12.jpg","license":0,"date_captured":""},{"id":13,"width":1978,"height":3483,"file_name":"DOR_S1_13.jpg","license":0,"date_captured":""},{"id":14,"width":2320,"height":2867,"file_name":"DOR_S1_14.jpg","license":0,"date_captured":""},{"id":15,"width":2212,"height":2942,"file_name":"DOR_S1_15.jpg","license":0,"date_captured":""},{"id":16,"width":1978,"height":2747,"file_name":"DOR_S1_16.jpg","license":0,"date_captured":""},{"id":17,"width":3714,"height":2904,"file_name":"DOR_S1_17.jpg","license":0,"date_captured":""},{"id":18,"width":3797,"height":2831,"file_name":"DOR_S1_18.jpg","license":0,"date_captured":""},{"id":19,"width":2028,"height":3102,"file_name":"DOR_S1_19.jpg","license":0,"date_captured":""},{"id":20,"width":2458,"height":3594,"file_name":"DOR_S1_20.jpg","license":0,"date_captured":""},{"id":21,"width":2508,"height":4160,"file_name":"DOR_S1_21.jpg","license":0,"date_captured":""},{"id":22,"width":2298,"height":3606,"file_name":"DOR_S1_22.jpg","license":0,"date_captured":""},{"id":23,"width":4160,"height":3120,"file_name":"DOR_S1_23.jpg","license":0,"date_captured":""},{"id":24,"width":2089,"height":4160,"file_name":"DOR_S1_24.jpg","license":0,"date_captured":""},{"id":25,"width":2117,"height":3120,"file_name":"DOR_S1_25.jpg","license":0,"date_captured":""},{"id":26,"width":2175,"height":3766,"file_name":"DOR_S1_26.jpg","license":0,"date_captured":""},{"id":27,"width":2237,"height":3120,"file_name":"DOR_S1_27.jpg","license":0,"date_captured":""},{"id":28,"width":2366,"height":2335,"file_name":"DOR_S1_28.jpg","license":0,"date_captured":""},{"id":29,"width":2883,"height":2978,"file_name":"DOR_S1_29.jpg","license":0,"date_captured":""},{"id":30,"width":3668,"height":3120,"file_name":"DOR_S1_30.jpg","license":0,"date_captured":""},{"id":31,"width":2984,"height":3544,"file_name":"DOR_S1_31.jpg","license":0,"date_captured":""},{"id":32,"width":2948,"height":2240,"file_name":"DOR_S1_32.jpg","license":0,"date_captured":""},{"id":33,"width":3686,"height":2880,"file_name":"DOR_S1_33.jpg","license":0,"date_captured":""},{"id":34,"width":3132,"height":2895,"file_name":"DOR_S1_34.jpg","license":0,"date_captured":""},{"id":35,"width":2662,"height":2825,"file_name":"DOR_S1_35.jpg","license":0,"date_captured":""},{"id":36,"width":3345,"height":3120,"file_name":"DOR_S1_36.jpg","license":0,"date_captured":""},{"id":37,"width":2052,"height":2486,"file_name":"DOR_S1_37.jpg","license":0,"date_captured":""},{"id":38,"width":2446,"height":2548,"file_name":"DOR_S1_38.jpg","license":0,"date_captured":""},{"id":39,"width":2542,"height":1809,"file_name":"DOR_S1_39.jpg","license":0,"date_captured":""},{"id":40,"width":2671,"height":1975,"file_name":"DOR_S1_40.jpg","license":0,"date_captured":""},{"id":41,"width":2754,"height":3000,"file_name":"DOR_S1_41.jpg","license":0,"date_captured":""},{"id":42,"width":2249,"height":2388,"file_name":"DOR_S1_42.jpg","license":0,"date_captured":""},{"id":43,"width":2077,"height":2498,"file_name":"DOR_S1_43.jpg","license":0,"date_captured":""},{"id":44,"width":2483,"height":2843,"file_name":"DOR_S1_44.jpg","license":0,"date_captured":""},{"id":45,"width":2495,"height":2788,"file_name":"DOR_S1_45.jpg","license":0,"date_captured":""},{"id":46,"width":1462,"height":3938,"file_name":"DOR_S1_46.jpg","license":0,"date_captured":""}],"annotations":[{"segmentation":[[236,139,357,2405,2163,2490,2290,97]],"area":4915222,"bbox":[236,97,2054,2393],"iscrowd":0,"id":1,"image_id":1,"category_id":3},{"segmentation":[[275,166,390,2778,2401,2817,2536,249,2536,198]],"area":5993911,"bbox":[275,166,2261,2651],"iscrowd":0,"id":2,"image_id":2,"category_id":3},{"segmentation":[[407,550,1645,490,1590,2691,435,2515]],"area":2724838,"bbox":[407,490,1238,2201],"iscrowd":0,"id":3,"image_id":3,"category_id":4},{"segmentation":[[350,311,483,2915,1977,2942,2010,350]],"area":4367460,"bbox":[350,311,1660,2631],"iscrowd":0,"id":4,"image_id":4,"category_id":4},{"segmentation":[[229,222,519,3033,2143,3101,2218,229]],"area":5726331,"bbox":[229,222,1989,2879],"iscrowd":0,"id":5,"image_id":5,"category_id":4},{"segmentation":[[244,61,2245,445,2111,2781,915,3086,256,3105]],"area":6091044,"bbox":[244,61,2001,3044],"iscrowd":0,"id":6,"image_id":6,"category_id":3},{"segmentation":[[341,382,2030,81,1811,4053,487,3630]],"area":6708708,"bbox":[341,81,1689,3972],"iscrowd":0,"id":7,"image_id":7,"category_id":3},{"segmentation":[[304,225,1625,37,1570,3098,1144,3098,432,2940]],"area":4043581,"bbox":[304,37,1321,3061],"iscrowd":0,"id":8,"image_id":8,"category_id":3},{"segmentation":[[250,225,1865,329,1798,2736,463,3041]],"area":4547840,"bbox":[250,225,1615,2816],"iscrowd":0,"id":9,"image_id":9,"category_id":4},{"segmentation":[[344,221,1927,344,1842,2744,487,3081]],"area":4527380,"bbox":[344,221,1583,2860],"iscrowd":0,"id":10,"image_id":10,"category_id":4},{"segmentation":[[229,43,1402,251,1338,2223,341,2618]],"area":3020475,"bbox":[229,43,1173,2575],"iscrowd":0,"id":11,"image_id":11,"category_id":4},{"segmentation":[[398,533,1148,308,1110,3563,450,2993]],"area":2441250,"bbox":[398,308,750,3255],"iscrowd":0,"id":12,"image_id":12,"category_id":4},{"segmentation":[[367,374,1822,116,1611,3174,408,2658]],"area":4449390,"bbox":[367,116,1455,3058],"iscrowd":0,"id":13,"image_id":13,"category_id":4},{"segmentation":[[331,275,1928,202,1877,2785,420,2695]],"area":4125051,"bbox":[331,202,1597,2583],"iscrowd":0,"id":14,"image_id":14,"category_id":4},{"segmentation":[[350,216,400,2473,1710,2536,1786,235]],"area":3331520,"bbox":[350,216,1436,2320],"iscrowd":0,"id":15,"image_id":15,"category_id":4},{"segmentation":[[226,178,261,2453,1598,2453,1669,220]],"area":3282825,"bbox":[226,178,1443,2275],"iscrowd":0,"id":16,"image_id":16,"category_id":4},{"segmentation":[[249,312,1140,318,1151,2484,380,2370]],"area":1959144,"bbox":[249,312,902,2172],"iscrowd":0,"id":17,"image_id":17,"category_id":3},{"segmentation":[[2330,255,3533,227,3385,2863,2240,2699]],"area":3408348,"bbox":[2240,227,1293,2636],"iscrowd":0,"id":18,"image_id":17,"category_id":3},{"segmentation":[[257,269,1155,263,1241,2396,400,2339]],"area":2098872,"bbox":[257,263,984,2133],"iscrowd":0,"id":19,"image_id":18,"category_id":3},{"segmentation":[[2362,212,3448,223,3334,2533,2316,2487]],"area":2627372,"bbox":[2316,212,1132,2321],"iscrowd":0,"id":20,"image_id":18,"category_id":3},{"segmentation":[[529,308,1600,328,1573,2537,609,2537]],"area":2387259,"bbox":[529,308,1071,2229],"iscrowd":0,"id":21,"image_id":19,"category_id":3},{"segmentation":[[582,318,775,3226,2016,3218,2055,310]],"area":4295268,"bbox":[582,310,1473,2916],"iscrowd":0,"id":22,"image_id":20,"category_id":3},{"segmentation":[[261,261,440,3991,1915,3973,2112,198]],"area":7020843,"bbox":[261,198,1851,3793],"iscrowd":0,"id":23,"image_id":21,"category_id":3},{"segmentation":[[360,416,1685,324,1671,3391,444,3264]],"area":4063775,"bbox":[360,324,1325,3067],"iscrowd":0,"id":24,"image_id":22,"category_id":3},{"segmentation":[[432,91,1943,262,1931,3106,591,3112]],"area":4564731,"bbox":[432,91,1511,3021],"iscrowd":0,"id":25,"image_id":23,"category_id":3},{"segmentation":[[3222,396,4014,506,3782,2625,3064,2832]],"area":2314200,"bbox":[3064,396,950,2436],"iscrowd":0,"id":26,"image_id":23,"category_id":3},{"segmentation":[[495,76,1351,545,1284,3532,629,4094]],"area":3439408,"bbox":[495,76,856,4018],"iscrowd":0,"id":27,"image_id":24,"category_id":3},{"segmentation":[[445,226,1287,506,1269,3124,531,3105]],"area":2440116,"bbox":[445,226,842,2898],"iscrowd":0,"id":28,"image_id":25,"category_id":3},{"segmentation":[[404,448,1653,610,1653,3446,874,3755,536,3718]],"area":4130443,"bbox":[404,448,1249,3307],"iscrowd":0,"id":29,"image_id":26,"category_id":3},{"segmentation":[[500,55,1591,226,1506,2975,579,3090]],"area":3311185,"bbox":[500,55,1091,3035],"iscrowd":0,"id":30,"image_id":27,"category_id":3},{"segmentation":[[358,222,409,1973,1962,2073,2003,187]],"area":3102470,"bbox":[358,187,1645,1886],"iscrowd":0,"id":31,"image_id":28,"category_id":3},{"segmentation":[[488,273,2616,215,2552,2656,541,2552]],"area":5194448,"bbox":[488,215,2128,2441],"iscrowd":0,"id":32,"image_id":29,"category_id":3},{"segmentation":[[305,91,487,3053,3229,3089,3412,67]],"area":9389354,"bbox":[305,67,3107,3022],"iscrowd":0,"id":33,"image_id":30,"category_id":3},{"segmentation":[[329,437,2755,129,2776,3413,494,2970]],"area":8035948,"bbox":[329,129,2447,3284],"iscrowd":0,"id":34,"image_id":31,"category_id":3},{"segmentation":[[66,319,2624,372,2581,2209,22,2235]],"area":4985432,"bbox":[22,319,2602,1916],"iscrowd":0,"id":35,"image_id":32,"category_id":3},{"segmentation":[[1452,1938,2288,1981,2344,695,1483,656]],"area":1181900,"bbox":[1452,656,892,1325],"iscrowd":0,"id":36,"image_id":32,"category_id":3},{"segmentation":[[331,17,669,2483,3227,2535,3308,17]],"area":7496086,"bbox":[331,17,2977,2518],"iscrowd":0,"id":37,"image_id":33,"category_id":3},{"segmentation":[[684,485,730,2875,3097,2881,3097,275]],"area":6288278,"bbox":[684,275,2413,2606],"iscrowd":0,"id":38,"image_id":34,"category_id":3},{"segmentation":[[2098,783,3033,748,2986,2191,2092,2080]],"area":1357863,"bbox":[2092,748,941,1443],"iscrowd":0,"id":39,"image_id":34,"category_id":3},{"segmentation":[[299,214,2436,147,2314,2558,427,2522]],"area":5152307,"bbox":[299,147,2137,2411],"iscrowd":0,"id":40,"image_id":35,"category_id":3},{"segmentation":[[554,274,646,2797,1511,3053,1828,3077,2760,2827,2882,250,1810,189,1548,171]],"area":6765168,"bbox":[554,171,2328,2906],"iscrowd":0,"id":41,"image_id":36,"category_id":3},{"segmentation":[[263,274,1875,247,1810,2106,263,2095]],"area":2996708,"bbox":[263,247,1612,1859],"iscrowd":0,"id":42,"image_id":37,"category_id":3},{"segmentation":[[303,204,430,2297,2176,2314,2154,143]],"area":4066283,"bbox":[303,143,1873,2171],"iscrowd":0,"id":43,"image_id":38,"category_id":3},{"segmentation":[[378,301,2206,237,2323,1792,329,1792]],"area":3100670,"bbox":[329,237,1994,1555],"iscrowd":0,"id":44,"image_id":39,"category_id":3},{"segmentation":[[267,20,511,1581,2304,1557,2415,8]],"area":3378804,"bbox":[267,8,2148,1573],"iscrowd":0,"id":45,"image_id":40,"category_id":3},{"segmentation":[[224,279,2408,194,2372,2687,400,2669]],"area":5444712,"bbox":[224,194,2184,2493],"iscrowd":0,"id":46,"image_id":41,"category_id":3},{"segmentation":[[415,289,1834,308,1773,2062,481,2076]],"area":2535753,"bbox":[415,289,1419,1787],"iscrowd":0,"id":47,"image_id":42,"category_id":3},{"segmentation":[[210,161,219,2150,1667,2062,1692,288]],"area":2947698,"bbox":[210,161,1482,1989],"iscrowd":0,"id":48,"image_id":43,"category_id":3},{"segmentation":[[533,383,2244,211,2133,2611,600,2372]],"area":4106400,"bbox":[533,211,1711,2400],"iscrowd":0,"id":49,"image_id":44,"category_id":3},{"segmentation":[[343,294,463,2370,2037,2479,2076,223]],"area":3909648,"bbox":[343,223,1733,2256],"iscrowd":0,"id":50,"image_id":45,"category_id":3},{"segmentation":[[354,85,469,3855,1300,3239,1393,439]],"area":3917030,"bbox":[354,85,1039,3770],"iscrowd":0,"id":51,"image_id":46,"category_id":3}],"licenses":[{"id":0,"name":"Unknown License","url":""}],"categories":[{"supercategory":"type","id":1,"name":"Bird"},{"supercategory":"type","id":2,"name":"Human"},{"supercategory":"type","id":3,"name":"Cup (object)"},{"supercategory":"type","id":4,"name":"Unknown (object)"}]}
+{
+    "DOR_S1_1.jpg440449": {
+        "filename": "DOR_S1_1.jpg",
+        "size": 440449,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        236,
+                        357,
+                        2163,
+                        2290
+                    ],
+                    "all_points_y": [
+                        139,
+                        2405,
+                        2490,
+                        97
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_2.jpg676816": {
+        "filename": "DOR_S1_2.jpg",
+        "size": 676816,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        275,
+                        390,
+                        2401,
+                        2536,
+                        2536
+                    ],
+                    "all_points_y": [
+                        166,
+                        2778,
+                        2817,
+                        249,
+                        198
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_3.jpg742858": {
+        "filename": "DOR_S1_3.jpg",
+        "size": 742858,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        407,
+                        1645,
+                        1590,
+                        435
+                    ],
+                    "all_points_y": [
+                        550,
+                        490,
+                        2691,
+                        2515
+                    ]
+                },
+                "region_attributes": {
+                    "name": "lift",
+                    "type": "unknown",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_4.jpg688235": {
+        "filename": "DOR_S1_4.jpg",
+        "size": 688235,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        350,
+                        483,
+                        1977,
+                        2010
+                    ],
+                    "all_points_y": [
+                        311,
+                        2915,
+                        2942,
+                        350
+                    ]
+                },
+                "region_attributes": {
+                    "name": "lift",
+                    "type": "unknown",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_5.jpg628099": {
+        "filename": "DOR_S1_5.jpg",
+        "size": 628099,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        229,
+                        519,
+                        2143,
+                        2218
+                    ],
+                    "all_points_y": [
+                        222,
+                        3033,
+                        3101,
+                        229
+                    ]
+                },
+                "region_attributes": {
+                    "name": "lift",
+                    "type": "unknown",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_6.jpg597370": {
+        "filename": "DOR_S1_6.jpg",
+        "size": 597370,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        244,
+                        2245,
+                        2111,
+                        915,
+                        256
+                    ],
+                    "all_points_y": [
+                        61,
+                        445,
+                        2781,
+                        3086,
+                        3105
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_7.jpg1048688": {
+        "filename": "DOR_S1_7.jpg",
+        "size": 1048688,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        341,
+                        2030,
+                        1811,
+                        487
+                    ],
+                    "all_points_y": [
+                        382,
+                        81,
+                        4053,
+                        3630
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_8.jpg587114": {
+        "filename": "DOR_S1_8.jpg",
+        "size": 587114,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        304,
+                        1625,
+                        1570,
+                        1144,
+                        432
+                    ],
+                    "all_points_y": [
+                        225,
+                        37,
+                        3098,
+                        3098,
+                        2940
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_9.jpg698391": {
+        "filename": "DOR_S1_9.jpg",
+        "size": 698391,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        250,
+                        1865,
+                        1798,
+                        463
+                    ],
+                    "all_points_y": [
+                        225,
+                        329,
+                        2736,
+                        3041
+                    ]
+                },
+                "region_attributes": {
+                    "name": "lift",
+                    "type": "unknown",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_10.jpg620900": {
+        "filename": "DOR_S1_10.jpg",
+        "size": 620900,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        344,
+                        1927,
+                        1842,
+                        487
+                    ],
+                    "all_points_y": [
+                        221,
+                        344,
+                        2744,
+                        3081
+                    ]
+                },
+                "region_attributes": {
+                    "name": "lift",
+                    "type": "unknown",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_11.jpg523803": {
+        "filename": "DOR_S1_11.jpg",
+        "size": 523803,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        229,
+                        1402,
+                        1338,
+                        341
+                    ],
+                    "all_points_y": [
+                        43,
+                        251,
+                        2223,
+                        2618
+                    ]
+                },
+                "region_attributes": {
+                    "name": "lift",
+                    "type": "unknown",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_12.jpg589013": {
+        "filename": "DOR_S1_12.jpg",
+        "size": 589013,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        398,
+                        1148,
+                        1110,
+                        450
+                    ],
+                    "all_points_y": [
+                        533,
+                        308,
+                        3563,
+                        2993
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "unknown",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_13.jpg700868": {
+        "filename": "DOR_S1_13.jpg",
+        "size": 700868,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        367,
+                        1822,
+                        1611,
+                        408
+                    ],
+                    "all_points_y": [
+                        374,
+                        116,
+                        3174,
+                        2658
+                    ]
+                },
+                "region_attributes": {
+                    "name": "lift",
+                    "type": "unknown",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_14.jpg572752": {
+        "filename": "DOR_S1_14.jpg",
+        "size": 572752,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        331,
+                        1928,
+                        1877,
+                        420
+                    ],
+                    "all_points_y": [
+                        275,
+                        202,
+                        2785,
+                        2695
+                    ]
+                },
+                "region_attributes": {
+                    "name": "lift",
+                    "type": "unknown",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_15.jpg566896": {
+        "filename": "DOR_S1_15.jpg",
+        "size": 566896,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        350,
+                        400,
+                        1710,
+                        1786
+                    ],
+                    "all_points_y": [
+                        216,
+                        2473,
+                        2536,
+                        235
+                    ]
+                },
+                "region_attributes": {
+                    "name": "lift",
+                    "type": "unknown",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_16.jpg496254": {
+        "filename": "DOR_S1_16.jpg",
+        "size": 496254,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        226,
+                        261,
+                        1598,
+                        1669
+                    ],
+                    "all_points_y": [
+                        178,
+                        2453,
+                        2453,
+                        220
+                    ]
+                },
+                "region_attributes": {
+                    "name": "lift",
+                    "type": "unknown",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_17.jpg1534631": {
+        "filename": "DOR_S1_17.jpg",
+        "size": 1534631,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        249,
+                        1140,
+                        1151,
+                        380
+                    ],
+                    "all_points_y": [
+                        312,
+                        318,
+                        2484,
+                        2370
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            },
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        2330,
+                        3533,
+                        3385,
+                        2240
+                    ],
+                    "all_points_y": [
+                        255,
+                        227,
+                        2863,
+                        2699
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_18.jpg1278876": {
+        "filename": "DOR_S1_18.jpg",
+        "size": 1278876,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        257,
+                        1155,
+                        1241,
+                        400
+                    ],
+                    "all_points_y": [
+                        269,
+                        263,
+                        2396,
+                        2339
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            },
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        2362,
+                        3448,
+                        3334,
+                        2316
+                    ],
+                    "all_points_y": [
+                        212,
+                        223,
+                        2533,
+                        2487
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_19.jpg609967": {
+        "filename": "DOR_S1_19.jpg",
+        "size": 609967,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        529,
+                        1600,
+                        1573,
+                        609
+                    ],
+                    "all_points_y": [
+                        308,
+                        328,
+                        2537,
+                        2537
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_20.jpg840307": {
+        "filename": "DOR_S1_20.jpg",
+        "size": 840307,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        582,
+                        775,
+                        2016,
+                        2055
+                    ],
+                    "all_points_y": [
+                        318,
+                        3226,
+                        3218,
+                        310
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_21.jpg1015503": {
+        "filename": "DOR_S1_21.jpg",
+        "size": 1015503,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        261,
+                        440,
+                        1915,
+                        2112
+                    ],
+                    "all_points_y": [
+                        261,
+                        3991,
+                        3973,
+                        198
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_22.jpg716792": {
+        "filename": "DOR_S1_22.jpg",
+        "size": 716792,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        360,
+                        1685,
+                        1671,
+                        444
+                    ],
+                    "all_points_y": [
+                        416,
+                        324,
+                        3391,
+                        3264
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_23.jpg1412136": {
+        "filename": "DOR_S1_23.jpg",
+        "size": 1412136,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        432,
+                        1943,
+                        1931,
+                        591
+                    ],
+                    "all_points_y": [
+                        91,
+                        262,
+                        3106,
+                        3112
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            },
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        3222,
+                        4014,
+                        3782,
+                        3064
+                    ],
+                    "all_points_y": [
+                        396,
+                        506,
+                        2625,
+                        2832
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_24.jpg796216": {
+        "filename": "DOR_S1_24.jpg",
+        "size": 796216,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        495,
+                        1351,
+                        1284,
+                        629
+                    ],
+                    "all_points_y": [
+                        76,
+                        545,
+                        3532,
+                        4094
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_25.jpg670279": {
+        "filename": "DOR_S1_25.jpg",
+        "size": 670279,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        445,
+                        1287,
+                        1269,
+                        531
+                    ],
+                    "all_points_y": [
+                        226,
+                        506,
+                        3120,
+                        3105
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_26.jpg649652": {
+        "filename": "DOR_S1_26.jpg",
+        "size": 649652,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        404,
+                        1653,
+                        1653,
+                        874,
+                        536
+                    ],
+                    "all_points_y": [
+                        448,
+                        610,
+                        3446,
+                        3755,
+                        3718
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_27.jpg633240": {
+        "filename": "DOR_S1_27.jpg",
+        "size": 633240,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        500,
+                        1591,
+                        1506,
+                        579
+                    ],
+                    "all_points_y": [
+                        55,
+                        226,
+                        2975,
+                        3090
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_28.jpg352585": {
+        "filename": "DOR_S1_28.jpg",
+        "size": 352585,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        358,
+                        409,
+                        1962,
+                        2003
+                    ],
+                    "all_points_y": [
+                        222,
+                        1973,
+                        2073,
+                        187
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_29.jpg566601": {
+        "filename": "DOR_S1_29.jpg",
+        "size": 566601,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        488,
+                        2616,
+                        2552,
+                        541
+                    ],
+                    "all_points_y": [
+                        273,
+                        215,
+                        2656,
+                        2552
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_30.jpg693990": {
+        "filename": "DOR_S1_30.jpg",
+        "size": 693990,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        305,
+                        487,
+                        3229,
+                        3412
+                    ],
+                    "all_points_y": [
+                        91,
+                        3053,
+                        3089,
+                        67
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_31.jpg703422": {
+        "filename": "DOR_S1_31.jpg",
+        "size": 703422,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        329,
+                        2755,
+                        2776,
+                        494
+                    ],
+                    "all_points_y": [
+                        437,
+                        129,
+                        3413,
+                        2970
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_32.jpg411435": {
+        "filename": "DOR_S1_32.jpg",
+        "size": 411435,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        66,
+                        2624,
+                        2581,
+                        22
+                    ],
+                    "all_points_y": [
+                        319,
+                        372,
+                        2209,
+                        2235
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            },
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        1452,
+                        2288,
+                        2344,
+                        1483
+                    ],
+                    "all_points_y": [
+                        1938,
+                        1981,
+                        695,
+                        656
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_33.jpg806100": {
+        "filename": "DOR_S1_33.jpg",
+        "size": 806100,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        331,
+                        669,
+                        3227,
+                        3308
+                    ],
+                    "all_points_y": [
+                        17,
+                        2483,
+                        2535,
+                        17
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_34.jpg630724": {
+        "filename": "DOR_S1_34.jpg",
+        "size": 630724,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        684,
+                        730,
+                        3097,
+                        3097
+                    ],
+                    "all_points_y": [
+                        485,
+                        2875,
+                        2881,
+                        275
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            },
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        2098,
+                        3033,
+                        2986,
+                        2092
+                    ],
+                    "all_points_y": [
+                        783,
+                        748,
+                        2191,
+                        2080
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_35.jpg473349": {
+        "filename": "DOR_S1_35.jpg",
+        "size": 473349,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        299,
+                        2436,
+                        2314,
+                        427
+                    ],
+                    "all_points_y": [
+                        214,
+                        147,
+                        2558,
+                        2522
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_36.jpg657816": {
+        "filename": "DOR_S1_36.jpg",
+        "size": 657816,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        554,
+                        646,
+                        1511,
+                        1828,
+                        2760,
+                        2882,
+                        1810,
+                        1548
+                    ],
+                    "all_points_y": [
+                        274,
+                        2797,
+                        3053,
+                        3077,
+                        2827,
+                        250,
+                        189,
+                        171
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_37.jpg347420": {
+        "filename": "DOR_S1_37.jpg",
+        "size": 347420,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        263,
+                        1875,
+                        1810,
+                        263
+                    ],
+                    "all_points_y": [
+                        274,
+                        247,
+                        2106,
+                        2095
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_38.jpg398294": {
+        "filename": "DOR_S1_38.jpg",
+        "size": 398294,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        303,
+                        430,
+                        2176,
+                        2154
+                    ],
+                    "all_points_y": [
+                        204,
+                        2297,
+                        2314,
+                        143
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_39.jpg309815": {
+        "filename": "DOR_S1_39.jpg",
+        "size": 309815,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        378,
+                        2206,
+                        2323,
+                        329
+                    ],
+                    "all_points_y": [
+                        301,
+                        237,
+                        1792,
+                        1792
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_40.jpg451764": {
+        "filename": "DOR_S1_40.jpg",
+        "size": 451764,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        267,
+                        511,
+                        2304,
+                        2415
+                    ],
+                    "all_points_y": [
+                        20,
+                        1581,
+                        1557,
+                        8
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_41.jpg449243": {
+        "filename": "DOR_S1_41.jpg",
+        "size": 449243,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        224,
+                        2408,
+                        2372,
+                        400
+                    ],
+                    "all_points_y": [
+                        279,
+                        194,
+                        2687,
+                        2669
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_42.jpg442142": {
+        "filename": "DOR_S1_42.jpg",
+        "size": 442142,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        415,
+                        1834,
+                        1773,
+                        481
+                    ],
+                    "all_points_y": [
+                        289,
+                        308,
+                        2062,
+                        2076
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_43.jpg441628": {
+        "filename": "DOR_S1_43.jpg",
+        "size": 441628,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        210,
+                        219,
+                        1667,
+                        1692
+                    ],
+                    "all_points_y": [
+                        161,
+                        2150,
+                        2062,
+                        288
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_44.jpg621729": {
+        "filename": "DOR_S1_44.jpg",
+        "size": 621729,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        533,
+                        2244,
+                        2133,
+                        600
+                    ],
+                    "all_points_y": [
+                        383,
+                        211,
+                        2611,
+                        2372
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_45.jpg484695": {
+        "filename": "DOR_S1_45.jpg",
+        "size": 484695,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        343,
+                        463,
+                        2037,
+                        2076
+                    ],
+                    "all_points_y": [
+                        294,
+                        2370,
+                        2479,
+                        223
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    },
+    "DOR_S1_46.jpg361905": {
+        "filename": "DOR_S1_46.jpg",
+        "size": 361905,
+        "regions": [
+            {
+                "shape_attributes": {
+                    "name": "polygon",
+                    "all_points_x": [
+                        354,
+                        469,
+                        1300,
+                        1393
+                    ],
+                    "all_points_y": [
+                        85,
+                        3855,
+                        3239,
+                        439
+                    ]
+                },
+                "region_attributes": {
+                    "name": "door",
+                    "type": "cup",
+                    "image_quality": {
+                        "good": true,
+                        "frontal": true,
+                        "good_illumination": true
+                    }
+                }
+            }
+        ],
+        "file_attributes": {
+            "caption": "",
+            "public_domain": "no",
+            "image_url": ""
+        }
+    }
+}
