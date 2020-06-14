@@ -1,28 +1,20 @@
 """
 Mask R-CNN
 Train on the toy bottle dataset and implement color splash effect.
-
 Copyright (c) 2018 Matterport, Inc.
 Licensed under the MIT License (see LICENSE for details)
 Written by Waleed Abdulla
-
 ------------------------------------------------------------
-
 Usage: import the module (see Jupyter notebooks for examples), or run from
        the command line as such:
-
     # Train a new model starting from pre-trained COCO weights
     python3 bottle.py train --dataset=/home/datascience/Workspace/maskRcnn/Mask_RCNN-master/samples/bottle/dataset --weights=coco
-
     # Resume training a model that you had trained earlier
     python3 bottle.py train --dataset=/path/to/bottle/dataset --weights=last
-
     # Train a new model starting from ImageNet weights
     python3 bottle.py train --dataset=/path/to/bottle/dataset --weights=imagenet
-
     # Apply color splash to an image
     python3 bottle.py splash --weights=/path/to/weights/file.h5 --image=<URL or path to file>
-
     # Apply color splash to video using the last weights you trained
     python3 bottle.py splash --weights=last --video=<URL or path to file>
 """
@@ -51,7 +43,7 @@ ROOT_DIR = os.path.abspath("./")
 # Import Mask RCNN
 
 # Path to trained weights file
-COCO_WEIGHTS_PATH = os.path.join('./weights', "mask_rcnn_coco.h5")
+COCO_WEIGHTS_PATH = os.path.join(ROOT_DIR, "mask_rcnn_coco.h5")
 
 # Directory to save logs and model checkpoints, if not provided
 # through the command line argument --logs
@@ -63,7 +55,7 @@ DEFAULT_LOGS_DIR = os.path.join(ROOT_DIR, "logs")
 ############################################################
 
 category = 'doorway'
-class_names = ['door', 'lift']
+class_names = ['door', 'lift', 'stairs', 'escalator']
 
 
 class CustomConfig(Config):
@@ -78,15 +70,13 @@ class CustomConfig(Config):
     IMAGES_PER_GPU = 1
 
     # Number of classes (including background)
-    NUM_CLASSES = 1 + len(class_names)  # Background + toys
+    NUM_CLASSES = 1 + len(class_names)  # Background + toy
 
     # Number of training steps per epoch
-    STEPS_PER_EPOCH = 50
+    STEPS_PER_EPOCH = 200
 
     # Skip detections with < 90% confidence
     DETECTION_MIN_CONFIDENCE = 0.9
-
-    LEARNING_RATE = 0.003
 
 
 ############################################################
@@ -225,7 +215,7 @@ def train(model):
     print("Training network heads")
     model.train(dataset_train, dataset_val,
                 learning_rate=config.LEARNING_RATE,
-                epochs=10,
+                epochs=30,
                 layers='heads')
 
 
@@ -236,7 +226,6 @@ def color_splash(image, mask):
     """Apply color splash effect.
     image: RGB image [height, width, 3]
     mask: instance segmentation mask [height, width, instance count]
-
     Returns result image.
     """
     # Make a grayscale copy of the image. The grayscale copy still
@@ -311,11 +300,6 @@ def detect_and_color_splash(model, image_path=None, video_path=None):
 
 
 if __name__ == '__main__':
-    import tensorflow as tf
-    config = tf.ConfigProto(allow_soft_placement=True)
-    config.gpu_options.allocator_type = 'BFC'
-    config.gpu_options.allow_growth = True
-    sess = tf.Session(config=config)
     import argparse
 
     # Parse command line arguments
