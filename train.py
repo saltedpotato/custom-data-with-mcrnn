@@ -73,10 +73,10 @@ class CustomConfig(Config):
     NUM_CLASSES = 1 + len(class_names)  # Background + toy
 
     # Number of training steps per epoch
-    STEPS_PER_EPOCH = 200
+    STEPS_PER_EPOCH = 100
 
     # Skip detections with < 90% confidence
-    DETECTION_MIN_CONFIDENCE = 0.9
+    DETECTION_MIN_CONFIDENCE = 9.8
 
 
 ############################################################
@@ -95,7 +95,7 @@ class CustomDataset(utils.Dataset):
             self.add_class(category, i, class_names[i-1])
 
         # Train or validation dataset?
-        assert subset in ["train", "val"]
+        assert subset in ["train", "val", "predict"]
         dataset_dir = os.path.join(dataset_dir, subset)
 
         # Load annotations
@@ -212,10 +212,11 @@ def train(model):
     # Since we're using a very small dataset, and starting from
     # COCO trained weights, we don't need to train too long. Also,
     # no need to train all layers, just the heads should do it.
+
     print("Training network heads")
     model.train(dataset_train, dataset_val,
                 learning_rate=config.LEARNING_RATE,
-                epochs=30,
+                epochs=100,
                 layers='heads')
 
 
