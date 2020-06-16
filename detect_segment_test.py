@@ -15,15 +15,8 @@ from mrcnn.model import MaskRCNN
 from mrcnn.visualize import display_instances
 
 # define 81 classes that the coco model knows about
-class_names = ['bread-wholemeal', 'potatoes-steamed', 'broccoli', 'butter',
-               'hard-cheese', 'water', 'banana', 'wine-white', 'bread-white',
-               'apple', 'pizza-margherita-baked', 'salad-leaf-salad-green',
-               'zucchini', 'water-mineral', 'coffee-with-caffeine', 'avocado',
-               'tomato', 'dark-chocolate', 'white-coffee-with-caffeine', 'egg',
-               'mixed-salad-chopped-without-sauce', 'sweet-pepper', 'mixed-vegetables',
-               'mayonnaise', 'rice', 'chips-french-fries', 'carrot', 'tomato-sauce',
-               'cucumber', 'wine-red', 'cheese', 'strawberries', 'espresso-with-caffeine',
-               'tea', 'chicken', 'jam', 'leaf-spinach', 'pasta-spaghetti', 'french-beans', 'bread-whole-wheat']
+class_names = ['door', 'lift', 'stairs', 'escalator']
+
 
 # define the test configuration
 
@@ -47,6 +40,7 @@ class TestConfig(Config):
 
 def main():
     array = sys.argv[1:]
+    print(array)
 
     if os.path.exists(array[0]):
         path_to_weight = array[0]

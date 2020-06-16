@@ -39,6 +39,8 @@ import time
 from imgaug import augmenters as iaa
 import keras
 
+np.random.bit_generator = np.random._bit_generator
+
 # Root directory of the project
 ROOT_DIR = os.path.abspath("./")
 
@@ -76,24 +78,9 @@ class CustomConfig(Config):
 
     # Number of training steps per epoch
     STEPS_PER_EPOCH = 100
-    VALIDATION_STEPS = 70
 
     # Skip detections with < 90% confidence
-    DETECTION_MIN_CONFIDENCE = 0.9
-
-    IMAGE_MIN_DIM = 1024
-    IMAGE_MAX_DIM = 1024
-
-    MAX_GT_INSTANCES = 100  # or 3
-    DETECTION_MAX_INSTANCES = 10
-    DETECTION_MIN_CONFIDENCE = 0.7  # or 0.7
-    DETECTION_NMS_THRESHOLD = 0.01  # or 0.3
-
-    RPN_ANCHOR_SCALES = (4, 8, 16, 32, 64)
-
-    TRAIN_ROIS_PER_IMAGE = 100
-    RPN_TRAIN_ANCHORS_PER_IMAGE = 128
-    MASK_SHAPE = [112, 112]
+    DETECTION_MIN_CONFIDENCE = 9.8
 
 
 ############################################################
@@ -131,50 +118,49 @@ class CustomDataset(utils.Dataset):
         # }
         # We mostly care about the x and y coordinates of each region
 
-        coco = COCO(os.path.join(dataset_dir, 'annotations.json'))
+        annotations = json.load(
+            open(os.path.join(dataset_dir, "annotations_json.json")))
+        annotations = list(annotations.values())  # don't need the dict keys
+        # The VIA tool saves images in the JSON even if they don't have any
+        # annotations. Skip unannotated images.
+        annotations = [a for a in annotations if a['regions']]
+        # Add images
+        for a in annotations:
+            # Get the x, y coordinaets of points of the polygons that make up
+            # the outline of each object instance. These are stores in the
+            # shape_attributes (see json format above)
+            # The if condition is needed to support VIA versions 1.x and 2.x.
+            # if type(a['regions']) is dict:
+            # polygons = [r['shape_attributes'] for r in a['regions'].values()]
+            # else:
+            # polygons = [r['shape_attributes'] for r in a['regions']]
+            # polygons = [s['shape_attributes'] for s in a['regions']]
+            if type(a['regions']) is dict:
+                polygons = [r['shape_attributes']
+                            for r in a['regions'].values()]
+            else:
+                polygons = [r['shape_attributes'] for r in a['regions']]
+                doorway = [r['region_attributes'] for r in a['regions']]
+                class_ids = [n for n in range(0, len(doorway))]
 
-        category_ids = coco.loadCats(coco.getCatIds())
-        cat_ids = [obj['id'] for obj in category_ids]
+            # load_mask() needs the image size to convert polygons to masks.
+            # Unfortunately, VIA doesn't include it in JSON, so we must read
+            # the image. This is only managable since the dataset is tiny.
+            # os.path.join(dataset_dir,
+            image_path = "{}/{}".format(dataset_dir + "/images", a['filename'])
 
-        for catIndex in tqdm(cat_ids):
-            image_ids = coco.getImgIds(catIds=catIndex)
-            for i in range(len(image_ids)):
-                polygons = []
-                class_ids = []
-
-                tmp = coco.loadImgs([image_ids[i]])
-                w, h = tmp[0]['width'], tmp[0]['height']
-                a_image_id = image_ids[i]
-                img = coco.loadImgs(a_image_id)[0]  # here fetching it
-                annotation_ids = coco.getAnnIds(imgIds=img['id'])
-                annotations = coco.loadAnns(annotation_ids)
-                image_path = os.path.join(
-                    dataset_dir, 'images/'+img['file_name'])
-
-                # we are now inputting the polygons
-                for j in range(len(annotations)):
-                    all_points_x = []
-                    all_points_y = []
-
-                    for n in range(0, len(annotations[j]['segmentation'][0]), 2):
-                        all_points_x.append(
-                            annotations[j]['segmentation'][0][n])
-                        all_points_y.append(
-                            annotations[j]['segmentation'][0][n+1])
-                    polygons.append(
-                        {'name': 'polygon', 'all_points_x': all_points_x, 'all_points_y': all_points_y})
-                    idx = cat_ids.index(annotations[j]['category_id'])
-                    class_ids.append(class_names.index(
-                        category_ids[idx]['name'])+1)
-
-                self.add_image(
-                    category,  # for a single class just add the name here
-                    # use file name as a unique image id
-                    image_id=img['file_name'],
-                    path=image_path,
-                    width=w, height=h,
-                    polygons=polygons,
-                    class_ids=class_ids)
+            # print(image_path)
+            image = skimage.io.imread(image_path)
+            height, width = image.shape[:2]
+            ## retrieving labels and class_ids properly properly from files ##
+            ## class_ids = 0 for background ##
+            self.add_image(
+                category,
+                image_id=a['filename'],  # use file name as a unique image id
+                path=image_path,
+                width=width, height=height,
+                polygons=polygons,
+                class_ids=class_ids)
 
     # TOMODIFY FROM HERE
     def load_mask(self, image_id):
@@ -225,11 +211,7 @@ def train(model):
     dataset_val.load_custom(args.dataset, "val")
     dataset_val.prepare()
 
-    # *** This training schedule is an example. Update to your needs ***
-    # Since we're using a very small dataset, and starting from
-    # COCO trained weights, we don't need to train too long. Also,
-    # no need to train all layers, just the heads should do it.
-
+    # augmentation settings
     augmentation = iaa.Sometimes(0.6, [
         iaa.Fliplr(0.5),
         iaa.Flipud(0.5),
@@ -238,15 +220,51 @@ def train(model):
     ])
 
     # Training - Stage 1
-    print("Training network heads")
+    # print("Training network heads")
+    # model.train(dataset_train, dataset_val,
+    #             learning_rate=0.0001,
+    #             epochs=20,
+    #             layers='heads',
+    #             augmentation=augmentation,
+    #             custom_callbacks=[keras.callbacks.EarlyStopping(
+    #                 monitor='val_loss', mode='min', verbose=1, patience=6)]
+    #             )
+    # # # # Training - Stage 2
+    # # # # Finetune layers from ResNet stage 4 and up
+    # print("Fine tune Resnet stage 4 and up")
+    # model.train(dataset_train, dataset_val,
+    #             learning_rate=0.0001,
+    #             epochs=30,
+    #             layers='4+',
+    #             custom_callbacks=[keras.callbacks.EarlyStopping(monitor='val_loss', mode='min',
+    #                                                             verbose=1, patience=6)]
+    #             )
+    # # # # Training - Stage 3
+    # # # # Fine tune all layers
+    # print("Fine tune all layers")
+    # model.train(dataset_train, dataset_val,
+    #             learning_rate=0.0001 / 10,
+    #             epochs=40,
+    #             layers='all',
+    #             custom_callbacks=[keras.callbacks.EarlyStopping(monitor='val_loss', mode='min',
+    #                                                             verbose=1, patience=6)]
+    #             )
+
     model.train(dataset_train, dataset_val,
-                learning_rate=0.00001,
+                learning_rate=config.LEARNING_RATE,
                 epochs=100,
-                layers='heads',
                 augmentation=augmentation,
-                custom_callbacks=[keras.callbacks.EarlyStopping(
-                    monitor='val_loss', mode='min', verbose=1, patience=6)]
-                )
+                layers='heads')
+    # *** This training schedule is an example. Update to your needs ***
+    # Since we're using a very small dataset, and starting from
+    # COCO trained weights, we don't need to train too long. Also,
+    # no need to train all layers, just the heads should do it.
+    # print("Training network heads")
+    # model.train(dataset_train, dataset_val,
+    # learning_rate=config.LEARNING_RATE,
+    # epochs=30,
+    # layers='heads')
+    # model.save("traffic_model_weights.h5")
 
 #######################################################################################################################
 
@@ -272,6 +290,10 @@ def color_splash(image, mask):
 
 def detect_and_color_splash(model, image_path=None, video_path=None):
     assert image_path or video_path
+    ####### testing###
+    dataset_train = CustomDataset()
+    dataset_train.load_custom(args.dataset, "train")
+    ##########
 
     # Image or video?
     if image_path:
@@ -283,9 +305,16 @@ def detect_and_color_splash(model, image_path=None, video_path=None):
         r = model.detect([image], verbose=1)[0]
         # Color splash
         splash = color_splash(image, r['masks'])
+        print(r['class_ids'])
+        print(class_names)
+        display_instances(image, r['rois'], r['masks'], r['class_ids'],
+                          class_names, r['scores'])
+
         # Save output
-        file_name = "splash_{:%Y%m%dT%H%M%S}.png".format(
-            datetime.datetime.now())
+        date_now = "{:%Y%m%dT%H%M%S}".format(datetime.datetime.now())
+        file_name = "splash_{}.png".format(date_now)
+        prediction_filename = "save_{}.json".format(date_now)
+        save_predictions(r, prediction_filename)
         skimage.io.imsave(file_name, splash)
     elif video_path:
         import cv2
@@ -310,13 +339,13 @@ def detect_and_color_splash(model, image_path=None, video_path=None):
             success, image = vcapture.read()
             if success:
                 # OpenCV returns images as BGR, convert to RGB
-                image = image[..., ::-1]
+                image = image[..., :: -1]
                 # Detect objects
                 r = model.detect([image], verbose=0)[0]
                 # Color splash
                 splash = color_splash(image, r['masks'])
                 # RGB -> BGR to save image to video
-                splash = splash[..., ::-1]
+                splash = splash[..., :: -1]
                 # Add image to video writer
                 vwriter.write(splash)
                 count += 1
