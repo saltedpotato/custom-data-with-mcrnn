@@ -77,6 +77,7 @@ class CustomConfig(Config):
     # Number of training steps per epoch
     STEPS_PER_EPOCH = 100
     VALIDATION_STEPS = 70
+    WEIGHT_DECAY = 0.0001
 
     # Skip detections with < 90% confidence
     DETECTION_MIN_CONFIDENCE = 0.9
