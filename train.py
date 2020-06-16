@@ -85,7 +85,6 @@ class CustomConfig(Config):
     IMAGE_MAX_DIM = 1024
 
     MAX_GT_INSTANCES = 100  # or 3
-    DETECTION_MAX_INSTANCES = 10
     DETECTION_MIN_CONFIDENCE = 0.7  # or 0.7
     DETECTION_NMS_THRESHOLD = 0.01  # or 0.3
 
