@@ -80,20 +80,15 @@ class CustomConfig(Config):
     WEIGHT_DECAY = 0.0001
 
     # Skip detections with < 90% confidence
-    DETECTION_MIN_CONFIDENCE = 0.9
+    DETECTION_MIN_CONFIDENCE = 0.7  # or 0.7
 
     IMAGE_MIN_DIM = 1024
     IMAGE_MAX_DIM = 1024
 
-    MAX_GT_INSTANCES = 100  # or 3
-    DETECTION_MIN_CONFIDENCE = 0.7  # or 0.7
-    DETECTION_NMS_THRESHOLD = 0.01  # or 0.3
+    RPN_NMS_THRESHOLD = 0.8
+    TRAIN_ROIS_PER_IMAGE = 320
 
-    RPN_ANCHOR_SCALES = (4, 8, 16, 32, 64)
-
-    TRAIN_ROIS_PER_IMAGE = 100
-    RPN_TRAIN_ANCHORS_PER_IMAGE = 128
-    MASK_SHAPE = [112, 112]
+    RPN_ANCHOR_SCALES = (64, 128, 256, 512, 1024)
 
 
 ############################################################
@@ -241,11 +236,9 @@ def train(model):
     print("Training network heads")
     model.train(dataset_train, dataset_val,
                 learning_rate=0.00001,
-                epochs=100,
+                epochs=50,
                 layers='heads',
                 augmentation=augmentation,
-                custom_callbacks=[keras.callbacks.EarlyStopping(
-                    monitor='val_loss', mode='min', verbose=1, patience=6)]
                 )
 
 #######################################################################################################################
