@@ -88,7 +88,7 @@ class CustomConfig(Config):
     RPN_NMS_THRESHOLD = 0.8
     TRAIN_ROIS_PER_IMAGE = 320
 
-    RPN_ANCHOR_SCALES = (64, 128, 256, 512, 1024)
+    RPN_ANCHOR_SCALES = (8, 16, 32, 64, 128)
 
 
 ############################################################
