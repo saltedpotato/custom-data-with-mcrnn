@@ -82,11 +82,10 @@ class CustomConfig(Config):
     # Skip detections with < 90% confidence
     DETECTION_MIN_CONFIDENCE = 0.7  # or 0.7
 
-    IMAGE_MIN_DIM = 1024
-    IMAGE_MAX_DIM = 1024
+    RPN_NMS_THRESHOLD = 0.9
+    TRAIN_ROIS_PER_IMAGE = 200
 
-    RPN_NMS_THRESHOLD = 0.8
-    TRAIN_ROIS_PER_IMAGE = 320
+    MASK_SHAPE = [56, 56]
 
     RPN_ANCHOR_SCALES = (8, 16, 32, 64, 128)
 
