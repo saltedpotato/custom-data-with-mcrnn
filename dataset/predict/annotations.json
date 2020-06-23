@@ -5,7 +5,7 @@
         "description": "VIA project exported to COCO format using VGG Image Annotator (http://www.robots.ox.ac.uk/~vgg/software/via/)",
         "contributor": "",
         "url": "http://www.robots.ox.ac.uk/~vgg/software/via/",
-        "date_created": "Thu Jun 18 2020 12:23:00 GMT+0800 (Singapore Standard Time)"
+        "date_created": "Tue Jun 23 2020 11:12:10 GMT+0800 (Singapore Standard Time)"
     },
     "images": [
         {
@@ -26,14 +26,6 @@
         },
         {
             "id": 3,
-            "width": 640,
-            "height": 372,
-            "file_name": "home-design.jpg",
-            "license": 0,
-            "date_captured": ""
-        },
-        {
-            "id": 4,
             "width": 500,
             "height": 600,
             "file_name": "Home-Lift-Platform-Lift-Malaysia-Arian-Engineering-Malaysia.jpg",
@@ -41,7 +33,7 @@
             "date_captured": ""
         },
         {
-            "id": 5,
+            "id": 4,
             "width": 465,
             "height": 529,
             "file_name": "lift_stairs.jpg",
@@ -49,7 +41,7 @@
             "date_captured": ""
         },
         {
-            "id": 6,
+            "id": 5,
             "width": 1199,
             "height": 896,
             "file_name": "mall.jpg",
@@ -57,7 +49,7 @@
             "date_captured": ""
         },
         {
-            "id": 7,
+            "id": 6,
             "width": 780,
             "height": 520,
             "file_name": "md-lift-0806.jpg",
@@ -65,7 +57,7 @@
             "date_captured": ""
         },
         {
-            "id": 8,
+            "id": 7,
             "width": 1600,
             "height": 731,
             "file_name": "oyster-elevator-1.jpg",
@@ -73,7 +65,7 @@
             "date_captured": ""
         },
         {
-            "id": 9,
+            "id": 8,
             "width": 600,
             "height": 421,
             "file_name": "singaporesep-27-2015-escalator-systems-600w-321980273.jpg",
@@ -81,10 +73,50 @@
             "date_captured": ""
         },
         {
-            "id": 10,
+            "id": 9,
             "width": 780,
             "height": 520,
             "file_name": "st_20170113_pram13_2870299.jpg",
+            "license": 0,
+            "date_captured": ""
+        },
+        {
+            "id": 10,
+            "width": 800,
+            "height": 800,
+            "file_name": "49335-13628853.jpg",
+            "license": 0,
+            "date_captured": ""
+        },
+        {
+            "id": 11,
+            "width": 350,
+            "height": 400,
+            "file_name": "c68713ce42100b13564fda1fb4cedd4b-350x400_1.jpg",
+            "license": 0,
+            "date_captured": ""
+        },
+        {
+            "id": 12,
+            "width": 400,
+            "height": 470,
+            "file_name": "Door-Frame-No-Hacking.jpg",
+            "license": 0,
+            "date_captured": ""
+        },
+        {
+            "id": 13,
+            "width": 634,
+            "height": 845,
+            "file_name": "my-30-staircase-refresh.jpg",
+            "license": 0,
+            "date_captured": ""
+        },
+        {
+            "id": 14,
+            "width": 1024,
+            "height": 675,
+            "file_name": "stairs_kustom_1-1024x675.jpg",
             "license": 0,
             "date_captured": ""
         }
@@ -242,31 +274,6 @@
         {
             "segmentation": [
                 [
-                    205,
-                    22,
-                    215,
-                    334,
-                    325,
-                    320,
-                    331,
-                    38
-                ]
-            ],
-            "area": 39312,
-            "bbox": [
-                205,
-                22,
-                126,
-                312
-            ],
-            "iscrowd": 0,
-            "id": 6,
-            "image_id": 3,
-            "category_id": 3
-        },
-        {
-            "segmentation": [
-                [
                     407,
                     5,
                     402,
@@ -285,8 +292,8 @@
                 584
             ],
             "iscrowd": 0,
-            "id": 7,
-            "image_id": 4,
+            "id": 6,
+            "image_id": 3,
             "category_id": 3
         },
         {
@@ -324,8 +331,8 @@
                 194
             ],
             "iscrowd": 0,
-            "id": 8,
-            "image_id": 4,
+            "id": 7,
+            "image_id": 3,
             "category_id": 2
         },
         {
@@ -349,8 +356,8 @@
                 478
             ],
             "iscrowd": 0,
-            "id": 9,
-            "image_id": 5,
+            "id": 8,
+            "image_id": 4,
             "category_id": 4
         },
         {
@@ -396,8 +403,8 @@
                 315
             ],
             "iscrowd": 0,
-            "id": 10,
-            "image_id": 5,
+            "id": 9,
+            "image_id": 4,
             "category_id": 2
         },
         {
@@ -435,8 +442,8 @@
                 310
             ],
             "iscrowd": 0,
-            "id": 11,
-            "image_id": 6,
+            "id": 10,
+            "image_id": 5,
             "category_id": 1
         },
         {
@@ -470,8 +477,8 @@
                 309
             ],
             "iscrowd": 0,
-            "id": 12,
-            "image_id": 6,
+            "id": 11,
+            "image_id": 5,
             "category_id": 1
         },
         {
@@ -501,8 +508,8 @@
                 294
             ],
             "iscrowd": 0,
-            "id": 13,
-            "image_id": 6,
+            "id": 12,
+            "image_id": 5,
             "category_id": 1
         },
         {
@@ -526,8 +533,8 @@
                 337
             ],
             "iscrowd": 0,
-            "id": 14,
-            "image_id": 7,
+            "id": 13,
+            "image_id": 6,
             "category_id": 4
         },
         {
@@ -551,8 +558,8 @@
                 239
             ],
             "iscrowd": 0,
-            "id": 15,
-            "image_id": 7,
+            "id": 14,
+            "image_id": 6,
             "category_id": 4
         },
         {
@@ -576,8 +583,8 @@
                 717
             ],
             "iscrowd": 0,
-            "id": 16,
-            "image_id": 8,
+            "id": 15,
+            "image_id": 7,
             "category_id": 4
         },
         {
@@ -601,8 +608,8 @@
                 702
             ],
             "iscrowd": 0,
-            "id": 17,
-            "image_id": 8,
+            "id": 16,
+            "image_id": 7,
             "category_id": 4
         },
         {
@@ -640,8 +647,8 @@
                 232
             ],
             "iscrowd": 0,
-            "id": 18,
-            "image_id": 9,
+            "id": 17,
+            "image_id": 8,
             "category_id": 2
         },
         {
@@ -691,8 +698,8 @@
                 293
             ],
             "iscrowd": 0,
-            "id": 19,
-            "image_id": 9,
+            "id": 18,
+            "image_id": 8,
             "category_id": 1
         },
         {
@@ -726,8 +733,8 @@
                 281
             ],
             "iscrowd": 0,
-            "id": 20,
-            "image_id": 9,
+            "id": 19,
+            "image_id": 8,
             "category_id": 1
         },
         {
@@ -765,8 +772,8 @@
                 275
             ],
             "iscrowd": 0,
-            "id": 21,
-            "image_id": 9,
+            "id": 20,
+            "image_id": 8,
             "category_id": 1
         },
         {
@@ -808,9 +815,241 @@
                 347
             ],
             "iscrowd": 0,
+            "id": 21,
+            "image_id": 9,
+            "category_id": 1
+        },
+        {
+            "segmentation": [
+                [
+                    31,
+                    38,
+                    38,
+                    43,
+                    289,
+                    589,
+                    404,
+                    662,
+                    392,
+                    717,
+                    734,
+                    653,
+                    738,
+                    629,
+                    778,
+                    589,
+                    781,
+                    546,
+                    784,
+                    506,
+                    772,
+                    465,
+                    748,
+                    425,
+                    610,
+                    401,
+                    565,
+                    368,
+                    342,
+                    3,
+                    216,
+                    7,
+                    216,
+                    36,
+                    223,
+                    62,
+                    178,
+                    60,
+                    156,
+                    10,
+                    93,
+                    14
+                ]
+            ],
+            "area": 537642,
+            "bbox": [
+                31,
+                3,
+                753,
+                714
+            ],
+            "iscrowd": 0,
             "id": 22,
             "image_id": 10,
             "category_id": 1
+        },
+        {
+            "segmentation": [
+                [
+                    97,
+                    115,
+                    98,
+                    347,
+                    236,
+                    357,
+                    233,
+                    105
+                ]
+            ],
+            "area": 35028,
+            "bbox": [
+                97,
+                105,
+                139,
+                252
+            ],
+            "iscrowd": 0,
+            "id": 23,
+            "image_id": 11,
+            "category_id": 3
+        },
+        {
+            "segmentation": [
+                [
+                    21,
+                    66,
+                    25,
+                    460,
+                    164,
+                    437,
+                    171,
+                    89
+                ]
+            ],
+            "area": 59100,
+            "bbox": [
+                21,
+                66,
+                150,
+                394
+            ],
+            "iscrowd": 0,
+            "id": 24,
+            "image_id": 12,
+            "category_id": 3
+        },
+        {
+            "segmentation": [
+                [
+                    252,
+                    39,
+                    232,
+                    462,
+                    344,
+                    464,
+                    377,
+                    7,
+                    289,
+                    2
+                ]
+            ],
+            "area": 66990,
+            "bbox": [
+                232,
+                2,
+                145,
+                462
+            ],
+            "iscrowd": 0,
+            "id": 25,
+            "image_id": 12,
+            "category_id": 3
+        },
+        {
+            "segmentation": [
+                [
+                    212,
+                    183,
+                    428,
+                    192,
+                    627,
+                    766,
+                    623,
+                    839,
+                    24,
+                    835
+                ]
+            ],
+            "area": 395568,
+            "bbox": [
+                24,
+                183,
+                603,
+                656
+            ],
+            "iscrowd": 0,
+            "id": 26,
+            "image_id": 13,
+            "category_id": 2
+        },
+        {
+            "segmentation": [
+                [
+                    681,
+                    7,
+                    684,
+                    16,
+                    664,
+                    13,
+                    664,
+                    42,
+                    640,
+                    50,
+                    643,
+                    92,
+                    623,
+                    89,
+                    624,
+                    128,
+                    597,
+                    136,
+                    597,
+                    171,
+                    565,
+                    177,
+                    573,
+                    220,
+                    541,
+                    222,
+                    544,
+                    271,
+                    512,
+                    282,
+                    511,
+                    334,
+                    471,
+                    343,
+                    477,
+                    400,
+                    436,
+                    414,
+                    442,
+                    471,
+                    395,
+                    493,
+                    395,
+                    556,
+                    798,
+                    617,
+                    814,
+                    427,
+                    777,
+                    423,
+                    773,
+                    1
+                ]
+            ],
+            "area": 258104,
+            "bbox": [
+                395,
+                1,
+                419,
+                616
+            ],
+            "iscrowd": 0,
+            "id": 27,
+            "image_id": 14,
+            "category_id": 2
         }
     ],
     "licenses": [
