@@ -1019,21 +1019,8 @@ def build_fpn_mask_graph(rois, feature_maps, image_meta,
                            name='mrcnn_mask_bn4')(x, training=train_bn)
     x = KL.Activation('relu')(x)
 
-    x = KL.TimeDistributed(KL.Conv2D(256, (3, 3), padding="same"),
-                           name="mrcnn_mask_conv5")(x)
-    x = KL.TimeDistributed(BatchNorm(),
-                           name='mrcnn_mask_bn5')(x, training=train_bn)
-    x = KL.Activation('relu')(x)
-
-    x = KL.TimeDistributed(KL.Conv2D(256, (3, 3), padding="same"),
-                           name="mrcnn_mask_conv6")(x)
-    x = KL.TimeDistributed(BatchNorm(),
-                           name='mrcnn_mask_bn6')(x, training=train_bn)
-    x = KL.Activation('relu')(x)
-
     x = KL.TimeDistributed(KL.Conv2DTranspose(256, (2, 2), strides=2, activation="relu"),
                            name="mrcnn_mask_deconv")(x)
-
     x = KL.TimeDistributed(KL.Conv2D(num_classes, (1, 1), strides=1, activation="sigmoid"),
                            name="mrcnn_mask")(x)
     return x
@@ -1857,6 +1844,9 @@ class MaskRCNN():
     The actual Keras model is in the keras_model property.
     """
 
+    def save(self, save_path):
+        self.keras_model.save(save_path)
+
     def __init__(self, mode, config, model_dir):
         """
         mode: Either "training" or "inference"
@@ -2351,6 +2341,8 @@ class MaskRCNN():
         """
         assert self.mode == "training", "Create model in training mode."
 
+        sess = K.get_session()
+
         # Pre-defined layer regular expressions
         layer_regex = {
             # all layers but the backbone
@@ -2418,24 +2410,25 @@ class MaskRCNN():
         self.epoch = max(self.epoch, epochs)
 
         # To save as .pb
-        frozen_graph = self.freeze_session(sess,
-                                           output_names=[out.op.name for out in self.keras_model.outputs])
+        frozen_graph = self.freeze_session(
+            sess, output_names=[out.op.name for out in self.keras_model.outputs])
         tf.train.write_graph(frozen_graph, self.log_dir,
                              "doorway_model.pb", as_text=False)
 
     def freeze_session(self, session, keep_var_names=None, output_names=None, clear_devices=True):
         """
-        Freezes the state of a session into a pruned computation graph.
-        Creates a new computation graph where variable nodes are replaced by
-        constants taking their current value in the session. The new graph will be
-        pruned so subgraphs that are not necessary to compute the requested
-        outputs are removed.
-        @param session The TensorFlow session to be frozen.
-        @param keep_var_names A list of variable names that should not be frozen,
-        or None to freeze all the variables in the graph.
-        @param output_names Names of the relevant graph outputs.
-        @param clear_devices Remove the device directives from the graph for better portability.
-        @return The frozen graph definition.
+            Freezes the state of a session into a pruned computation graph.
+            Creates a new computation graph where variable nodes are replaced by
+            constants taking their current value in the session. The new graph will be
+            pruned so subgraphs that are not necessary to compute the requested
+            outputs are removed.
+            @param session The TensorFlow session to be frozen.
+            @param keep_var_names A list of variable names that should not be frozen,
+            or None to freeze all the variables in the graph.
+
+            @param output_names Names of the relevant graph outputs.
+            @param clear_devices Remove the device directives from the graph for better portability.
+            @return The frozen graph definition.
         """
         graph = session.graph
         with session.as_default():
@@ -2449,7 +2442,7 @@ class MaskRCNN():
                     node.device = ""
             frozen_graph = tf.graph_util.convert_variables_to_constants(
                 session, input_graph_def, output_names, freeze_var_names)
-        return frozen_graph
+            return frozen_graph
 
     def mold_inputs(self, images):
         """Takes a list of images and modifies them to the format expected
