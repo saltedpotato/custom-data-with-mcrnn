@@ -227,20 +227,20 @@
             "id": 27,
             "width": -1,
             "height": -1,
-            "file_name": "Home-Lift-Platform-Lift-Malaysia-Arian-Engineering-Malaysia.jpg",
+            "file_name": "undefined",
             "license": 0,
-            "flickr_url": "Home-Lift-Platform-Lift-Malaysia-Arian-Engineering-Malaysia.jpg",
-            "coco_url": "Home-Lift-Platform-Lift-Malaysia-Arian-Engineering-Malaysia.jpg",
+            "flickr_url": "undefined",
+            "coco_url": "undefined",
             "date_captured": ""
         },
         {
             "id": 28,
             "width": -1,
             "height": -1,
-            "file_name": "lift_stairs.jpg",
+            "file_name": "undefined",
             "license": 0,
-            "flickr_url": "lift_stairs.jpg",
-            "coco_url": "lift_stairs.jpg",
+            "flickr_url": "undefined",
+            "coco_url": "undefined",
             "date_captured": ""
         }
     ],
@@ -1603,43 +1603,23 @@
     ],
     "categories": [
         {
-            "supercategory": "type",
-            "id": 1,
-            "name": "Bird"
-        },
-        {
-            "supercategory": "type",
-            "id": 2,
-            "name": "Human"
-        },
-        {
-            "supercategory": "type",
-            "id": 3,
-            "name": "Cup (object)"
-        },
-        {
-            "supercategory": "type",
-            "id": 4,
-            "name": "Unknown (object)"
-        },
-        {
             "supercategory": "doorway",
-            "id": 5,
+            "id": 1,
             "name": "escalator"
         },
         {
             "supercategory": "doorway",
-            "id": 6,
+            "id": 2,
             "name": "stairs"
         },
         {
             "supercategory": "doorway",
-            "id": 7,
+            "id": 3,
             "name": "door"
         },
         {
             "supercategory": "doorway",
-            "id": 8,
+            "id": 4,
             "name": "lift"
         }
     ]
