@@ -5,7 +5,7 @@
         "description": "VIA project exported to COCO format using VGG Image Annotator (http://www.robots.ox.ac.uk/~vgg/software/via/)",
         "contributor": "",
         "url": "http://www.robots.ox.ac.uk/~vgg/software/via/",
-        "date_created": "Fri Jul 03 2020 17:17:19 GMT+0800 (Singapore Standard Time)"
+        "date_created": "Fri Jul 03 2020 17:43:50 GMT+0800 (Singapore Standard Time)"
     },
     "images": [
         {
@@ -166,6 +166,81 @@
             "height": 3120,
             "file_name": "STR_S4_162.jpg",
             "license": 0,
+            "date_captured": ""
+        },
+        {
+            "id": 21,
+            "width": -1,
+            "height": -1,
+            "license": 0,
+            "flickr_url": "undefined",
+            "coco_url": "undefined",
+            "date_captured": ""
+        },
+        {
+            "id": 22,
+            "width": -1,
+            "height": -1,
+            "license": 0,
+            "flickr_url": "undefined",
+            "coco_url": "undefined",
+            "date_captured": ""
+        },
+        {
+            "id": 23,
+            "width": -1,
+            "height": -1,
+            "license": 0,
+            "flickr_url": "undefined",
+            "coco_url": "undefined",
+            "date_captured": ""
+        },
+        {
+            "id": 24,
+            "width": -1,
+            "height": -1,
+            "license": 0,
+            "flickr_url": "undefined",
+            "coco_url": "undefined",
+            "date_captured": ""
+        },
+        {
+            "id": 25,
+            "width": -1,
+            "height": -1,
+            "license": 0,
+            "flickr_url": "undefined",
+            "coco_url": "undefined",
+            "date_captured": ""
+        },
+        {
+            "id": 26,
+            "width": -1,
+            "height": -1,
+            "file_name": "undefined",
+            "license": 0,
+            "flickr_url": "undefined",
+            "coco_url": "undefined",
+            "date_captured": ""
+        },
+        {
+            "id": 27,
+            "width": -1,
+            "height": -1,
+            "file_name": "Home-Lift-Platform-Lift-Malaysia-Arian-Engineering-Malaysia.jpg",
+            "license": 0,
+            "flickr_url": "Home-Lift-Platform-Lift-Malaysia-Arian-Engineering-Malaysia.jpg",
+            "coco_url": "Home-Lift-Platform-Lift-Malaysia-Arian-Engineering-Malaysia.jpg",
+            "date_captured": ""
+        },
+        {
+            "id": 28,
+            "width": -1,
+            "height": -1,
+            "file_name": "lift_stairs.jpg",
+            "license": 0,
+            "flickr_url": "lift_stairs.jpg",
+            "coco_url": "lift_stairs.jpg",
             "date_captured": ""
         }
     ],
@@ -1528,23 +1603,43 @@
     ],
     "categories": [
         {
-            "supercategory": "doorway",
+            "supercategory": "type",
             "id": 1,
+            "name": "Bird"
+        },
+        {
+            "supercategory": "type",
+            "id": 2,
+            "name": "Human"
+        },
+        {
+            "supercategory": "type",
+            "id": 3,
+            "name": "Cup (object)"
+        },
+        {
+            "supercategory": "type",
+            "id": 4,
+            "name": "Unknown (object)"
+        },
+        {
+            "supercategory": "doorway",
+            "id": 5,
             "name": "escalator"
         },
         {
             "supercategory": "doorway",
-            "id": 2,
+            "id": 6,
             "name": "stairs"
         },
         {
             "supercategory": "doorway",
-            "id": 3,
+            "id": 7,
             "name": "door"
         },
         {
             "supercategory": "doorway",
-            "id": 4,
+            "id": 8,
             "name": "lift"
         }
     ]
