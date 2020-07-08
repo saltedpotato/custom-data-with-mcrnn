@@ -5783,6 +5783,13 @@
     ],
     "licenses": [
         {
+            "id": 0,
+            "name": "Unknown License",
+            "url": ""
+        }
+    ],
+    "categories": [
+        {
             "supercategory": "doorway",
             "id": 1,
             "name": "escalator"
